@@ -1,0 +1,36 @@
+<div class="container">
+  <button mat-stroked-button class="back-button" routerLink="/elder/home">
+    <mat-icon>arrow_back</mat-icon> Return
+  </button>
+
+  <h2>Reminders</h2>
+
+  <mat-card class="section-card pending">
+    <div class="section-header pending-header">
+      <mat-icon class="icon">alarm</mat-icon>
+      <span class="section-title">Pending Medications</span>
+    </div>
+
+    <div class="medication-item" *ngFor="let medication of pendingMedicines">
+      <div class="medication-info">
+        <span>Take {{medication.dosage}} of {{medication.medicineName}}</span>
+      </div>
+      <button mat-raised-button color="primary" (click)="deletePendingMedicines(medication)">Ready</button>
+    </div>
+  </mat-card>
+
+  <mat-card class="section-card taken">
+    <div class="section-header taken-header">
+      <span class="section-title">Add Medications</span>
+      </div>
+    <div class="help-item">
+      <textarea matInput placeholder="Type the medicine name" [(ngModel)]="pendingMedicine.medicineName" name="medicineName" required></textarea>
+      <textarea matInput placeholder="Type your dosage" [(ngModel)]="pendingMedicine.dosage" name="dosage" required></textarea>
+      <div class="send-button">
+        <button mat-raised-button color="primary" (click)="postPendingMedicine()">Enviar</button>
+      </div>
+    </div>
+
+
+  </mat-card>
+</div>

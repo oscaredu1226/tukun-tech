@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.back-button {
+  align-self: flex-start;
+  background-color: #0099B2 !important;
+  color: white !important;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.section-card {
+  flex: 1;
+  max-width: 45%;
+  min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.faqs {
+  background-color: #e0e0e0;
+}
+
+.request-help {
+  background-color: #e0e0e0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: #00bcd4;
+  margin: 10px
+}
+
+.help-header {
+  background-color: #00bcd4;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+.faq-item, .help-item {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 3%;
+}
+
+.emergency-numbers-item:last-child, .help-item:last-child {
+  border-bottom: none;
+}
+
+.support-number {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  margin-top: 10px;
+}
+
+.send-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+button {
+  width: 100px;
+}
+
+.send-message-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.send-message-container .help-item {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-card {
+    width: 90%;
+    max-width: 600px;
+  }
+}

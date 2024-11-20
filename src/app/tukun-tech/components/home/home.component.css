@@ -1,0 +1,125 @@
+:host {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+  width: 60px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-toolbar nav {
+  display: flex;
+  gap: 15px;
+}
+
+mat-toolbar button {
+  color: #003049;
+  font-weight: normal;
+  border: none;
+  background: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+mat-toolbar button:hover {
+  color: #004a99;
+}
+
+mat-toolbar button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+mat-toolbar button:hover::after {
+  width: 100%;
+}
+
+.home-button {
+  justify-content: center;
+  color: #007bff;
+  width: 50px;
+}
+
+.home-button:hover {
+  color: #004a99;
+  width: 50px;
+}
+
+.content {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 40px 20px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+  color: white;
+}
+.button-group-opt {
+  background-color: #0099B2;
+  color: white !important;
+  padding: 40px 60px;
+  font-size: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: normal;
+}
+
+button:hover {
+  background-color: #88dcec;
+  color: white;
+}
+
+.title{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  padding-left: 40px;
+}
+.subt{
+  font-family: 'Quicksand', sans-serif;
+
+}
+

@@ -1,0 +1,48 @@
+<div class="doctors-container">
+  <h1>Doctors</h1>
+
+  <div class="search-container">
+    <input matInput placeholder="Search Doctors">
+    <button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
+
+  <div class="table-container">
+    <div class="row">
+      <div class="content">
+        <table id="idtable" class="table table-striped table-bordered">
+          <thead>
+          <tr>
+            <th style="width: 10%">{{ 'doctors.name' | translate  }}</th>
+            <th style="width: 10%">{{ 'doctors.lastName' | translate  }}</th>
+            <th style="width: 10%">{{ 'doctors.DNI' | translate  }}</th>
+            <th style="width: 10%">{{ 'doctors.age' | translate  }}</th>
+            <th style="width: 10%">{{ 'doctors.specialization' | translate  }}</th>
+            <th style="width: 10%">{{ 'doctors.codeCMP' | translate  }}</th>
+            <th style="width: 10%">{{ 'doctors.contact' | translate  }}</th>
+            <th style="width: 10%">{{ 'doctors.nationality' | translate  }}</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let x of doctors">
+            <td>{{ x.name }}</td>
+            <td>{{ x.lastName }}</td>
+            <td>{{ x.dni }}</td>
+            <td>{{ x.age }}</td>
+            <td>{{ x.specialization!.specialization }}</td>
+            <td>{{ x.codeCmp }}</td>
+            <td>{{ x.contact }}</td>
+            <td>{{ x.nationality!.nationality }}</td>
+            <td > <button type="button" (click)="deleteDoctor(x)" style="width: 125px; background-color: #f10940" class="btn btn-warning btn-sm"> {{ 'doctors.delete' | translate  }} </button></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="idModalActualizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+</div>

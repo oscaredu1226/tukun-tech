@@ -1,0 +1,90 @@
+<mat-toolbar>
+  <button mat-button routerLink="/registration">
+    <mat-icon>arrow_back</mat-icon> Return
+  </button>
+</mat-toolbar>
+
+<div class="registration-form-container">
+  <h1>{{ 'doctors-registration.title' | translate  }}</h1>
+  <div class="registration-form">
+    <form (ngSubmit)="addDoctor()">
+      <!-- Name -->
+      <div class="form-row">
+        <label for="name">{{ 'doctors-registration.name' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="name" [(ngModel)]="newDoctor.name" name="name" required />
+        </mat-form-field>
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-row">
+        <label for="lastName">{{ 'doctors-registration.lastName' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="lastName" [(ngModel)]="newDoctor.lastName" name="lastName" required />
+        </mat-form-field>
+      </div>
+
+      <!-- DNI -->
+      <div class="form-row">
+        <label for="dni">{{ 'doctors-registration.DNI' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="dni" [(ngModel)]="newDoctor.dni" name="dni" required />
+        </mat-form-field>
+      </div>
+
+
+      <!-- Age -->
+      <div class="form-row">
+        <label for="age">{{ 'doctors-registration.age' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <input matInput type="number" id="age" [(ngModel)]="newDoctor.age" name="age" required />
+        </mat-form-field>
+      </div>
+
+      <!-- CMP Code -->
+      <div class="form-row">
+        <label for="cmpCode">{{ 'doctors-registration.codeCMP' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="cmpCode" [(ngModel)]="newDoctor.codeCmp" name="cmpCode" required />
+        </mat-form-field>
+      </div>
+
+      <!-- Nationality -->
+      <div class="form-row">
+        <label for="id_reg_nation">{{ 'doctors-registration.nationality' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <mat-select [(ngModel)]="newDoctor.nationality!.id" id="id_reg_nation" name="name" placeholder="Select nation">
+            <mat-option *ngFor="let nat of nations" [value]="nat.id" style="color: black">
+              {{ nat.nationality }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <!-- Specialization -->
+      <div class="form-row">
+        <label for="id_specialization">{{ 'doctors-registration.specialization' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <mat-select [(ngModel)]="newDoctor.specialization!.id" id="id_specialization" name="name" placeholder="Select a specialization">
+            <mat-option *ngFor="let speci of specialization" [value]="speci.id" style="color: black">
+              {{ speci.specialization }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <!-- Contact -->
+      <div class="form-row">
+        <label for="contact">{{ 'doctors-registration.contact' | translate  }}</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="contact" [(ngModel)]="newDoctor.contact" name="contact" required />
+        </mat-form-field>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button mat-button color="primary" type="submit">{{ 'doctors-registration.save' | translate  }}</button>
+      </div>
+    </form>
+  </div>
+</div>

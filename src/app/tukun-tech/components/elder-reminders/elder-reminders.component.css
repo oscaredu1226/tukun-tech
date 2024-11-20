@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.back-button {
+  align-self: flex-start;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.section-card {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.pending {
+  background-color: #dcdcdc;
+}
+
+.taken {
+  background-color: #dcdcdc;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.pending-header {
+  background-color: #ffd700;
+}
+
+.taken-header {
+  background-color: #00bcd4;
+}
+
+.icon {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.medication-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.medication-info {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button {
+  margin-left: 20px;
+  background-color: #0099B2 !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 600px) {
+  .section-card {
+    width: 90%;
+  }
+
+  .medication-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    margin: 10px 0 0;
+  }
+}

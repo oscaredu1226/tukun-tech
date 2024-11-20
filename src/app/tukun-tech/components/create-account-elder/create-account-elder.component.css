@@ -1,0 +1,225 @@
+/* Contenedor principal */
+.create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/assets/create-account-elder.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+
+/* Caja principal que se ajusta */
+.create-box {
+  width: 45vw; /* Usa unidades relativas para ajustarse al tamaño de la pantalla */
+  max-width: 570px;
+  min-width: 300px;
+  padding: 2rem;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out; /* Transición suave al ajustar tamaño */
+}
+
+/* Logo responsivo */
+.logo-tukun img {
+  width: 15vw; /* Escala el logo según el ancho de la ventana */
+  max-width: 150px;
+  height: auto;
+  margin-top: -0.5rem;
+  margin-left: 13rem;
+}
+
+/* Título */
+h2 {
+  color: #000;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem; /* Escala relativa */
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* Campo de formulario */
+mat-form-field {
+  width: 90%;
+  max-width: 460px;
+  margin: 1rem auto;
+  border-radius: 25px;
+  display: block;
+  font-size: 1rem; /* Ajuste relativo */
+}
+
+/* Botón de creación */
+.button-create {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.button-create button {
+  background-color: #0097B2;
+  color: white;
+  border-radius: 25px;
+  width: 60%;
+  max-width: 250px;
+  height: 2.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-create button:hover {
+  background-color: #D3EFF3;
+  color: #0097B2;
+}
+
+
+
+.tipe-account {
+  width: 100%;
+  max-width: 500px;
+  height: 2.5rem;
+  background: #d3eff3;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+
+}
+
+.rectangle {
+  width: 50%;
+  height: 100%;
+  background: #5cb4b5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFF;
+  transition: all 0.3s ease-in-out;
+}
+
+.text-elder, .text-clinics {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text-elder {
+  color: #d3eff3;
+  margin-left: -22rem;
+}
+
+.text-clinics {
+  color: #5cb4b5;
+  margin-right: 6rem;
+}
+
+/* Estilo de login */
+.text-login {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-top: 0rem;
+  margin-left: 12rem;
+}
+
+
+.button-login-account {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  margin-top: 1rem;
+  background-color: #5CB4B5;
+  color: white;
+  border-radius: 25px;
+  height: 2.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  margin-left: 5rem;
+}
+
+
+
+.login-account button:hover {
+  background-color: #D3EFF3;
+  color: #0097B2;
+}
+
+/* Media queries para pantallas medianas */
+@media (max-width: 768px) {
+  /* Ajusta el tamaño de la caja en pantallas medianas */
+  .create-box {
+    width: 70vw;
+  }
+
+  /* Logo más pequeño */
+  .logo-tukun img {
+    width: 20vw;
+    max-width: 100px;
+  }
+
+  /* Ajusta el tamaño del texto y los botones */
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .button-create button, .login-account button {
+    height: 2.2rem;
+    font-size: 0.9rem;
+  }
+
+}
+
+
+mat-form-field {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 600px; /* Ajusta el máximo que desees */
+  margin-bottom: 1rem; /* Añadir margen entre los campos si lo deseas */
+}
+
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  /* Caja aún más pequeña */
+  .create-box {
+    width: 85vw;
+  }
+
+  /* Logo más pequeño */
+  .logo-tukun img {
+    width: 25vw;
+    max-width: 80px;
+  }
+
+  /* Ajuste del texto */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Botones más pequeños */
+  .button-create button, .login-account button {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .text-elder, .text-clinics {
+    font-size: 0.9rem;
+  }
+
+  mat-form-field {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,187 @@
+/* Contenedor de la página de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  background-image: url('/assets/clinic-background.jpg'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Evita repetir la imagen */
+  padding: 20px;
+}
+
+/* Caja de login */
+.login-box {
+  width: 570px;
+  max-width: 100%; /* Evita que sobrepase el ancho de la pantalla */
+  height: auto;
+  padding: 2rem;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo del logo */
+.logo-tukun img {
+  width: 90px; /* Aumentado para pantallas grandes */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Título */
+h2 {
+  color: #000;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* Tipo de cuenta (Switch) */
+.tipe-account {
+  position: relative;
+  width: 100%; /* Responsivo */
+  max-width: 500px;
+  height: 40px;
+  margin-top: 0.2rem;
+  background: #d3eff3;
+  border-radius: 10px;
+}
+
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 50%;
+}
+
+.text-elder, .text-clinics {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.text-elder {
+  top: 25%;
+  left: 20%;
+  color: #5cb4b5;
+
+}
+
+.text-clinics {
+  top: 25%;
+  left: 70%;
+  color: #d3eff3;
+}
+
+/* Botones sociales */
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Adaptable al ancho */
+  max-width: 460px;
+  margin: 1rem 0;
+}
+
+.google-login img, .apple-login img, .facebook-login img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Campos del formulario */
+mat-form-field {
+  width: 100%; /* Responsivo */
+  max-width: 460px;
+  margin-bottom: 1rem;
+}
+
+/* Botón de login */
+.boto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.boto button {
+  background-color: #0097B2;
+  color: white;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 460px;
+}
+
+.boto button:hover {
+  background-color: #D3EFF3;
+  color: #0097B2;
+}
+
+/* Enlace "Olvidé mi contraseña" */
+.i-forgot-my-pass {
+  margin-top: 1rem;
+}
+
+.i-forgot-my-pass a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.i-forgot-my-pass a:hover {
+  text-decoration: underline;
+}
+
+/* Sección para crear cuenta */
+.create-account {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.create-account span {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.button-create-account {
+  background-color: #5CB4B5;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 460px;
+}
+
+.button-create-account:hover {
+  background-color: #D3EFF3;
+  color: #0097B2;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 1.5rem;
+    width: 90%; /* Ocupa la mayor parte del ancho en pantallas pequeñas */
+  }
+
+  .logo-tukun img {
+    width: 60px; /* Más pequeño en pantallas pequeñas */
+  }
+
+  .social-login {
+    gap: 1rem; /* Menor espacio entre los iconos */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-adulto-mayor, .text-cl-nicas {
+    font-size: 14px;
+  }
+}

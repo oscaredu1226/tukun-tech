@@ -1,0 +1,46 @@
+<div class="container">
+  <button mat-stroked-button class="back-button" routerLink="/elder/home">
+    <mat-icon>arrow_back</mat-icon> Return
+  </button>
+
+  <h2>{{ 'emergency-numbers.title' | translate }}</h2>
+
+  <div class="cards-container">
+    <mat-card class="section-card faqs">
+      <div class="section-header">
+        <span class="section-title">{{ 'emergency-numbers.added' | translate }}</span>
+      </div>
+
+      <div class="help-item" *ngFor="let item of emergencyNumbers">
+        {{ item.number || 'Propiedad no encontrada' }}
+        {{ item.contactName || 'Propiedad no encontrada' }}
+
+        <button mat-icon-button color="warn" (click)="deleteEmergencyNumbers(item)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </mat-card>
+
+    <mat-card class="section-card request-help">
+      <div class="section-header help-header">
+        <span class="section-title">{{ 'emergency-numbers.add' | translate }}</span>
+      </div>
+
+      <div class="help-item">
+        <label>{{ 'emergency-numbers.number' | translate }}</label>
+        <input matInput placeholder="Type the number" [(ngModel)]="emergencyNumber.number" name="number" required>
+      </div>
+
+      <div class="help-item">
+        <label>{{ 'emergency-numbers.contactName' | translate }}</label>
+        <input matInput placeholder="Type the contact name" [(ngModel)]="emergencyNumber.contactName" name="contactName" required>
+      </div>
+
+      <div class="send-button">
+        <button mat-raised-button color="primary" (click)="addEmergencyNumbers()">
+          {{ 'emergency-numbers.buttonAdd' | translate }}
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>

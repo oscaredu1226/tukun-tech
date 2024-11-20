@@ -1,0 +1,58 @@
+<div class="container">
+
+  <button mat-button class="btn-return" routerLink="/appointments">
+    <mat-icon>arrow_back</mat-icon> Return
+  </button>
+  <h1>Schedule Appointments</h1>
+
+  <div class="box-info">
+    <mat-label>Patient:</mat-label>
+    <mat-form-field class="patient-input">
+      <input matInput>
+    </mat-form-field>
+
+    <br>
+    <mat-label>Payment Method:</mat-label>
+    <mat-radio-group>
+      <mat-radio-button value="1">Cash</mat-radio-button>
+      <mat-radio-button value="2">Credit</mat-radio-button>
+    </mat-radio-group>
+
+    <br>
+
+    <mat-label>Type Appointments:</mat-label>
+    <mat-form-field>
+      <mat-select placeholder="Service">
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-label>Doctor:</mat-label>
+    <mat-form-field>
+      <mat-select placeholder="Doctor">
+        <mat-option *ngFor="let doctor of doctors" [value]="doctor.id">
+          {{ doctor.name }} {{ doctor.lastName }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-label>Email Patient:</mat-label>
+    <mat-form-field class="email-patient-email">
+      <input matInput>
+    </mat-form-field>
+
+    <br>
+    <mat-label>Date:</mat-label>
+    <mat-form-field class="date-container">
+      <input matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+
+
+    <button  class="btn-save" (click)="onClick()">Save</button>
+  </div>
+
+</div>

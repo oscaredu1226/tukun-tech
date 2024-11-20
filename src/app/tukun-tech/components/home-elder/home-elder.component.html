@@ -1,0 +1,28 @@
+<div class="home-container">
+  <mat-toolbar color="primary">
+    <span>{{ 'ElderHome.WELCOME' | translate }}</span>
+  </mat-toolbar>
+
+  <h2>{{ 'ElderHome.START_PROMPT' | translate }}</h2>
+
+  <div class="button-grid">
+    <button mat-raised-button color="primary" routerLink="/elder/vital-signs">
+      {{ 'ElderHome.VITAL_SIGNS' | translate }}
+    </button>
+    <button mat-raised-button color="primary" routerLink="/elder/profile">
+      {{ 'ElderHome.PROFILE' | translate }}
+    </button>
+    <button mat-raised-button color="primary" routerLink="/support/emergency-numbers">
+      {{ 'ElderHome.EMERGENCY_NUMBERS' | translate }}
+    </button>
+    <button mat-raised-button color="primary" routerLink="/elder/reminders">
+      {{ 'ElderHome.REMINDERS' | translate }}
+    </button>
+
+    <div class="centered-container">
+      <button mat-raised-button color="primary" routerLink="/support/technical">
+        {{ 'ElderHome.TECH_SUPPORT' | translate }}
+      </button>
+    </div>
+  </div>
+</div>

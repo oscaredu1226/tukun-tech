@@ -1,0 +1,45 @@
+<div class="create-container">
+  <div class="create-box">
+    <div class="logo-tukun">
+      <img src="/assets/Logo.png" alt="logo">
+    </div>
+
+    <h2>{{ 'CreateAccountElder.title' | translate }}</h2>
+
+    <form (ngSubmit)="register()">
+      <mat-form-field appearance="fill">
+        <mat-label>{{ 'CreateAccountElder.username' | translate }}</mat-label>
+        <input matInput [(ngModel)]="user.username" name="username" required placeholder="Username">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>{{ 'CreateAccountElder.password' | translate }}</mat-label>
+        <input matInput [(ngModel)]="user.password" name="password" type="password" required placeholder="Password">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>{{ 'CreateAccountElder.firstName' | translate }}</mat-label>
+        <input matInput [(ngModel)]="user.firstName" name="firstName" required placeholder="First Name">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>{{ 'CreateAccountElder.lastName' | translate }}</mat-label>
+        <input matInput [(ngModel)]="user.lastName" name="lastName" required placeholder="Last Name">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>{{ 'CreateAccountElder.email' | translate }}</mat-label>
+        <input matInput [(ngModel)]="user.email" name="email" type="email" required placeholder="Email">
+      </mat-form-field>
+
+      <div class="button-create">
+        <button mat-raised-button color="primary" type="submit">{{ 'CreateAccountElder.create' | translate }}</button>
+      </div>
+    </form>
+
+    <div class="login-account">
+      <span class="text-login">{{ 'CreateAccountElder.haveAccount' | translate }}</span>
+      <button mat-raised-button class="button-login-account" routerLink="/login-elder">{{ 'CreateAccountElder.login' | translate }}</button>
+    </div>
+  </div>
+</div>

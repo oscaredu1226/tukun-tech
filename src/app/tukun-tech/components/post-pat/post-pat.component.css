@@ -1,0 +1,50 @@
+.main-container {
+  padding: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px; /* Espacio entre tarjetas */
+  justify-items: center; /* Centrar elementos en la cuadrícula */
+  padding: 16px;
+}
+
+.patient-card {
+  padding: 16px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.purple {
+  color: purple;
+}
+
+.gray {
+  color: gray;
+}
+
+.heart-icon {
+  margin-left: 4px;
+}
+
+.postoperative-container {
+  padding: 20px;
+  text-align: center;
+}

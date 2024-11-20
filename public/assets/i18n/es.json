@@ -1,0 +1,268 @@
+{
+
+  "technical-support": {
+    "title": "Soporte Técnico",
+    "questions": "Preguntas Frecuentes",
+    "requestHelp": "Solicitar ayuda",
+    "supportNumber": "Número de soporte",
+    "sendMessage" : "Enviar mensaje",
+    "buttonMessage": "Enviar"
+  },
+
+  "emergency-numbers": {
+    "title": "Números de Emergencia",
+    "added": "Números de Emergencia Agregados",
+    "add": "Agregar un Número de Emergencia",
+    "number": "Número de telefono",
+    "contactName" : "Número de contacto",
+    "buttonAdd": "Añadir"
+  },
+
+  "patient-registration": {
+    "title": "Registro Paciente",
+    "name": "Nombres",
+    "lastName": "Apellidos",
+    "DNI": "DNI",
+    "gender": "Género",
+    "age": "Edad",
+    "bloodType": "Grupo Sanguíneo",
+    "nationality": "Nacionalidad",
+    "nroPolicies": "N° Póliza",
+    "insurance": "Seguro",
+    "allergies": "Alergias",
+    "buttonReturn" : "Volver",
+    "buttonSave": "Guardar",
+    "update": "Actualizar",
+    "close": "Cerrar",
+    "delete": "Eliminar",
+    "edit": "Editar"
+  },
+  "patients": {
+    "title": "Pacientes",
+    "patientName": "Nombre de paciente",
+    "age": "Edad",
+    "bloodType": "Blood Type",
+    "bedNumber": "Número de cama",
+    "insurance": "Seguro",
+    "update": "Actualizar"
+  },
+  "patientsHistory": {
+    "name": "Nombres",
+    "lastName": "Apellidos",
+    "DNI": "DNI",
+    "gender": "Género",
+    "age": "Edad",
+    "bloodType": "Grupo Sanguíneo",
+    "nationality": "Nacionalidad",
+    "nroPolicies": "N° Póliza",
+    "insurance": "Seguro",
+    "allergies": "Alergias",
+    "buttonUpdate": "Actualizar",
+    "appointments": "Consultas",
+    "treatment": "Tratamientos",
+    "exams": "Exámenes",
+    "medicalPrescriptions": "Preinscripciones médicas",
+    "buttonAdd": "Añadir"
+  },
+  "home-elder": {
+    "welcome": "Bienvenido",
+    "home-message": "¿Por dónde quieres empezar?",
+    "vitalSigns": "Panel de Signos Vitales",
+    "olderAdultProfile": "Perfil del Adulto Mayor",
+    "emergencyNumbers": "Números de Emergencia",
+    "reminders": "Recordatorios",
+    "technicalSupport": "Soporte Técnico"
+  },
+  "Vital-Signs-Panel": {
+    "title": "Panel de Signos Vitales",
+    "alerts": "Alertas",
+    "alertMessage": "Sin Alertas"
+  },
+  "Older-Adult-Profile": {
+    "title": "Perfil del Adulto Mayor",
+    "return": "Regresar",
+    "name": "Nombre",
+    "lastname": "Apellido",
+    "dni": "DNI",
+    "gender": "Género",
+    "age": "Edad",
+    "groupBlood": "Grupo Sanguíneo",
+    "nationality": "Nacionalidad",
+    "policy": "No. de Póliza",
+    "Sure": "Seguro",
+    "allergies": "Alergias",
+    "medicine": "Medicamento",
+    "update": "Actualizar",
+    "addDrugs": "Añadir Medicamentos"
+  },
+  "Emergency-Numbers": {
+    "title": "Números de Emergencia",
+    "return": "Regresar",
+    "familyContact": "Contacto Familiar",
+    "emergencyNumber": "Número de Emergencia",
+    "addContact": "Añadir Contacto",
+    "addNumber": "Añadir Número",
+    "edit": "Editar",
+    "delete": "Eliminar"
+  },
+
+  "Reminders": {
+    "title": "Recordatorios",
+    "pendingMedications": "Medicamentos Pendientes",
+    "medicationsTaken": "Medicamentos Tomados",
+    "return": "Regresar",
+    "ready": "Listo",
+    "earning": "Ganancia"
+  },
+
+
+
+
+
+
+  "navbar": {
+    "postPatients": "Pacientes Postoperatorios",
+    "icu": "Pacientes en UCI",
+    "registration": "Registro",
+    "patients": "Pacientes",
+    "doctors": "Médicos",
+    "appointments": "Citas"
+  },
+
+  "LoginClincs": {
+    "title": "Acceso",
+    "clinics": "Clínicas",
+    "elder": "Adulto Mayor",
+    "email": "Correo",
+    "password": "Contraseña",
+    "logIn": "Ingresar",
+    "forgotPassword": "He olvidado mi contraseña",
+    "dontHaveAccount": "¿No tienes una cuenta? Crea una",
+    "createAccount": "Crear una cuenta"
+  },
+
+  "LoginElder": {
+    "title": "Acceso",
+    "clinics": "Clínicas",
+    "elder": "Adulto Mayor",
+    "email": "Correo",
+    "password": "Contraseña",
+    "logIn": "Ingresar",
+    "forgotPassword": "He olvidado mi contraseña",
+    "dontHaveAccount": "¿No tienes una cuenta? Crea una",
+    "createAccount": "Crear una cuenta"
+  },
+
+  "CreateAccountClinics": {
+    "title": "Crear una cuenta",
+    "clinics": "Clínicas",
+    "elder": "Adulto Mayor",
+    "companyName": "Nombre de la compañia",
+    "ruc": "Ruc",
+    "email": "Correo",
+    "number": "Número",
+    "city": "Ciudad",
+    "password": "Contraseña",
+    "create": "Crear cuenta",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "login": "Ingresa en tu cuenta"
+  },
+
+  "CreateAccountElder": {
+    "title": "Crear una cuenta",
+    "clinics": "Clínicas",
+    "elder": "Adulto Mayor",
+    "name": "Nombre",
+    "lastName": "Apellido",
+    "dni": "DNI",
+    "email": "Correo",
+    "password": "Contraseña",
+    "age": "Edad",
+    "create": "Crear cuenta",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "login": "Ingresa en tu cuenta"
+  },
+
+  "HomeClincs": {
+    "title": "Bienvenido:",
+    "subTitle": "¿Por dónde quieres empezar?",
+    "postoperative": "Pacientes Postoperatorios",
+    "icu": "Pacientes en UCI",
+    "registration": "Registro",
+    "patients": "Pacientes",
+    "doctors": "Médicos",
+    "appointments": "Citas"
+  },
+
+  "postPatients": {
+    "title": "Pacientes Postoperatorios",
+    "bed": "Cama"
+  },
+
+  "icuPatients": {
+    "title": "Pacientes UCI",
+    "bed": "Cama"
+  },
+  "elder-profile": {
+    "buttonReturn": "Regresar",
+    "title": "Perfil del Adulto Mayor",
+    "name": "Nombre",
+    "lastName": "Apellido",
+    "DNI": "DNI",
+    "gender": "Género",
+    "bloodType": "Tipo de Sangre",
+    "nationality": "Nacionalidad",
+    "age": "Edad",
+    "medicalInsurance": "Seguro Médico",
+    "allergy": "Alergias",
+    "buttonSave": "Guardar"
+  },
+
+  "doctors" :{
+    "title": "Doctores",
+    "name": "Nombre",
+    "lastName": "Apellido",
+    "DNI": "DNI",
+    "age": "Edad",
+    "specialization": "Especializacion",
+    "codeCMP": "Codigo CMP",
+    "contact": "Contacto",
+    "nationality": "Nacionalidad"
+  },
+
+  "registration": {
+    "title": "Registrar",
+    "doctor": "Doctor",
+    "patient": "Paciente"
+  },
+
+  "doctors-registration" :{
+    "title": "Registro de Doctores",
+    "name": "Nombre",
+    "lastName": "Apellido",
+    "DNI": "DNI",
+    "age": "Edad",
+    "specialization": "Especializacion",
+    "codeCMP": "Codigo CMP",
+    "contact": "Contacto",
+    "nationality": "Nacionalidad",
+    "save" : "Guardar"
+  },
+  "ElderVitalSigns": {
+    "PANEL_TITLE": "Panel de Signos Vitales",
+    "HR": "Frecuencia Cardíaca",
+    "NIPB": "Presión Arterial No Invasiva",
+    "SPO2": "Saturación de Oxígeno",
+    "TEMP": "Temperatura",
+    "ALERTS_TITLE": "Alertas"
+  },
+  "ElderHome": {
+    "WELCOME": "Bienvenido",
+    "START_PROMPT": "¿Dónde quieres empezar?",
+    "VITAL_SIGNS": "Signos Vitales",
+    "PROFILE": "Perfil del Adulto Mayor",
+    "EMERGENCY_NUMBERS": "Números de Emergencia",
+    "REMINDERS": "Recordatorios",
+    "TECH_SUPPORT": "Soporte Técnico"
+  }
+}

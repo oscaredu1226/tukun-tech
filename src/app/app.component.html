@@ -1,0 +1,32 @@
+<!--
+<app-home/>
+
+<app-registration/>
+-->
+
+
+<mat-toolbar *ngIf="showToolbar" color="primary">
+  <span><img src="assets/Logo.png" alt="TukunTech Logo" class="logo"></span>
+
+  <span class="spacer"></span>
+  <nav>
+    <app-switch-language/>
+    <button mat-button routerLink="/postoperative">{{ 'navbar.postPatients' | translate }}</button>
+    <button mat-button routerLink="/icu">{{ 'navbar.icu' | translate }}</button>
+    <button mat-button routerLink="/registration">{{ 'navbar.registration' | translate }}</button>
+    <button mat-button routerLink="/patients">{{ 'navbar.patients' | translate }}</button>
+    <button mat-button routerLink="/doctors">{{ 'navbar.doctors' | translate }}</button>
+    <button mat-button routerLink="/appointments">{{ 'navbar.appointments' | translate }}</button>
+  </nav>
+  <button mat-icon-button routerLink="/home" class="home-button">
+    <mat-icon>home</mat-icon>
+  </button>
+</mat-toolbar>
+
+
+
+<router-outlet/>
+
+
+
+

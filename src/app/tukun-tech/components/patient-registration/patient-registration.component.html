@@ -1,0 +1,85 @@
+<mat-toolbar>
+  <button mat-button routerLink="/registration">
+    <mat-icon>arrow_back</mat-icon> {{ 'patient-registration.buttonReturn' | translate  }}
+  </button>
+</mat-toolbar>
+
+<div class="registration-form-container">
+  <h1>{{ 'patient-registration.title' | translate  }}</h1>
+
+  <div class="registration-form">
+    <form (ngSubmit)="register()">
+
+      <div class="form-row">
+        <label for="name">{{ 'patient-registration.name' | translate  }}:</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="name" [(ngModel)]="patient.name" name="name" required />
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-row">
+        <label for="lastName">{{ 'patient-registration.lastName' | translate  }}:</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="lastName" [(ngModel)]="patient.lastName" name="lastName" required />
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-row">
+        <label for="dni">{{ 'patient-registration.DNI' | translate  }}:</label>
+        <mat-form-field appearance="fill">
+          <input matInput id="dni" [(ngModel)]="patient.dni" name="dni" required />
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-row">
+        <label for="id_reg_gender">{{ 'patient-registration.gender' | translate }}:</label>
+        <mat-form-field appearance="fill">
+          <mat-select [(ngModel)]="patient.gender!.id" id="id_reg_gender" name="name"  placeholder="Select gender">
+            <mat-option *ngFor="let gen of genders" [value]="gen.id" style="color: black">
+              {{ gen.gender }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+
+
+      <div class="form-row">
+        <label for="id_reg_nation">{{ 'patient-registration.nationality' | translate }}:</label>
+        <mat-form-field appearance="fill">
+          <mat-select [(ngModel)]="patient.nationality!.id" id="id_reg_nation" name="name" placeholder="Select nation">
+            <mat-option *ngFor="let nat of nations" [value]="nat.id" style="color: black">
+              {{ nat.nationality }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <label for="id_reg_blood">{{ 'patient-registration.bloodType' | translate }}:</label>
+        <mat-form-field appearance="fill">
+          <mat-select [(ngModel)]="patient.bloodType!.id" id="id_reg_blood" name="bloodType" placeholder="Select blood type">
+            <mat-option *ngFor="let blo of bloods" [value]="blo.id" style="color: black">
+              {{ blo.type }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-row">
+        <label for="age">{{ 'patient-registration.age' | translate  }}:</label>
+        <mat-form-field appearance="fill">
+          <input matInput type="number" id="age" [(ngModel)]="patient.age" name="age" required />
+        </mat-form-field>
+      </div>
+
+
+      <div class="form-actions">
+        <button mat-button color="primary" type="submit">{{ 'patient-registration.buttonSave' | translate  }}</button>
+      </div>
+    </form>
+  </div>
+</div>

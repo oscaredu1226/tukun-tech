@@ -1,0 +1,54 @@
+.doctors-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.doctors-container h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.search-container {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  margin-left: 10px;
+}
+
+.table-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+th.mat-header-cell {
+  background-color: #0097B2;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+td.mat-cell {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tr.mat-header-row, tr.mat-row {
+  display: table-row;
+}
+
+.mat-elevation-z8 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

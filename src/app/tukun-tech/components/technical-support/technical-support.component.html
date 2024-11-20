@@ -1,0 +1,42 @@
+<div class="container">
+  <button mat-stroked-button class="back-button" routerLink="/elder/home">
+    <mat-icon>arrow_back</mat-icon> Return
+  </button>
+
+  <h2>{{ 'technical-support.title' | translate }}</h2>
+
+  <div class="cards-container">
+    <mat-card class="section-card faqs">
+      <div class="section-header">
+        <span class="section-title">{{ 'technical-support.questions' | translate }}</span>
+      </div>
+
+      <div class="faq-item" *ngFor="let item of technicalSupports">
+        {{ item.message || 'Propiedad no encontrada' }}
+      </div>
+
+    </mat-card>
+
+    <mat-card class="section-card request-help">
+      <div class="section-header help-header">
+        <span class="section-title">{{ 'technical-support.requestHelp' | translate }}</span>
+      </div>
+
+      <div class="help-item">
+        <label>{{ 'technical-support.supportNumber' | translate }}</label>
+        <span class="support-number">{{ supportNumber }}</span>
+      </div>
+
+      <div class="help-item">
+        <label>{{ 'technical-support.sendMessage' | translate }}</label>
+        <textarea matInput placeholder="Type your message" [(ngModel)]="technicalSupport.message" name="message" required></textarea>
+      </div>
+
+      <div class="send-button">
+        <button mat-raised-button color="primary" (click)="addTechnicalSupport()">{{ 'technical-support.buttonMessage' | translate }}</button>
+
+
+      </div>
+    </mat-card>
+  </div>
+</div>

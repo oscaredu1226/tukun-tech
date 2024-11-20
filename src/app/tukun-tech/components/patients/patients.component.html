@@ -1,0 +1,105 @@
+<div class="patients-container">
+  <h1>{{ 'patients.title' | translate }}</h1>
+
+  <div class="search-container">
+
+
+
+
+  </div>
+
+  <div class="table-container">
+
+
+    <div class="row">
+      <div class="col-md-25">
+        <div class="content">
+
+          <table id="idtable" class="table table-striped table-bordered">
+            <thead>
+            <tr>
+              <th style="width: 10%">{{ 'patient-registration.name' | translate  }}</th>
+              <th style="width: 10%">{{ 'patient-registration.lastName' | translate  }}</th>
+              <th style="width: 10%;background-color: lightcoral;">{{ 'patient-registration.DNI' | translate  }}</th>
+              <th style="width: 10%">{{ 'patient-registration.age' | translate  }}</th>
+              <th style="width: 10%">{{ 'patient-registration.bloodType' | translate  }}</th>
+              <th style="width: 10%">{{ 'patient-registration.nationality' | translate  }}</th>
+              <th style="width: 10%">{{ 'patient-registration.gender' | translate  }}</th>
+
+            </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let x of patients">
+                <td > {{x.name}} </td>
+                <td > {{x.lastName}} </td>
+                <td > {{x.dni}} </td>
+                <td > {{x.age}} </td>
+                <td > {{x.bloodType!.type}} </td>
+                <td > {{ x.nationality!.nationality }} </td>
+                <td > {{x.gender!.gender}} </td>
+                <td > <button type="button" (click)="buscar(x)" style="width: 125px" class="btn btn-warning btn-sm"  data-bs-toggle="modal" data-bs-target="#idModalActualizar"> {{ 'patient-registration.edit' | translate  }} </button></td>
+                <td > <button type="button" (click)="eliminar(x)" style="width: 125px; background-color: #f10940" class="btn btn-warning btn-sm"> {{ 'patient-registration.delete' | translate  }} </button></td>
+
+              </tr>
+
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="modal fade" id="idModalActualizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">{{ 'patients.update' | translate  }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form class="content">
+          <div class="submit-form">
+            <!-- Primera fila -->
+            <div class="row">
+              <div class="col-lg-4">
+                <label for="name">{{ 'patient-registration.name' | translate  }}</label>
+                <input type="text" [(ngModel)]="patient.name" placeholder="Ingrese el nombre" class="form-control" name="nombre" id="name" />
+              </div>
+              <div class="col-lg-4">
+                <label for="lastname">{{ 'patient-registration.lastName' | translate  }}</label>
+                <input type="text" [(ngModel)]="patient.lastName" placeholder="Ingrese el apellido" class="form-control" name="apellido" id="lastname" />
+              </div>
+            </div>
+
+            <!-- Segunda fila -->
+            <div class="row mt-3">
+              <div class="col-lg-4">
+                <label for="dni">{{ 'patient-registration.DNI' | translate  }}</label>
+                <input type="text" [(ngModel)]="patient.dni" placeholder="Ingrese el DNI" class="form-control" name="dni" id="dni" />
+              </div>
+              <div class="col-lg-4">
+                <label for="age">{{ 'patient-registration.age' | translate  }}</label>
+                <input type="text" [(ngModel)]="patient.age" placeholder="Ingrese la edad" class="form-control" name="edad" id="age" />
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'patient-registration.close' | translate  }}</button>
+        <button type="button" (click)="actualizar()" class="btn btn-primary">{{ 'patient-registration.buttonSave' | translate  }}</button>
+      </div>
+    </div>
+  </div>
+</div>

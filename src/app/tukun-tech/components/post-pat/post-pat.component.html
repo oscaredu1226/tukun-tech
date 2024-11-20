@@ -1,0 +1,37 @@
+
+<div class="postoperative-container">
+  <h1>{{'postPatients.title' | translate}}</h1>
+
+  <div class="main-container">
+
+    <div class="grid-container">
+      <ng-container *ngFor="let BEDS of beds">
+        <mat-card class="patient-card">
+          <mat-card-title>
+            <span>Cama {{ BEDS.id }} : {{ BEDS.patient.name }} {{BEDS.patient.lastName}} </span>
+          </mat-card-title>
+          <mat-card-content>
+            <div class="info-row">
+              <span>HR</span>
+              <span class="value red">{{ BEDS.hr }} <i class="heart-icon">❤</i></span>
+            </div>
+            <div class="info-row">
+              <span>NIPB</span>
+              <span class="value green">{{ BEDS.nipb }}</span>
+            </div>
+            <div class="info-row">
+              <span>SpO2</span>
+              <span class="value purple">{{ BEDS.sp02 }}</span>
+            </div>
+            <div class="info-row">
+              <span>Temp</span>
+              <span class="value gray">{{ BEDS.temp }}°C</span>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </ng-container>
+    </div>
+
+
+  </div>
+</div>

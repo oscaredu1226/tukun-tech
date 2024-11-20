@@ -1,0 +1,68 @@
+<div class="login-container">
+
+  <div class="login-box">
+
+    <div class="logo-tukun">
+      <img src="/assets/Logo.png">
+    </div>
+
+    <h2>{{ 'LoginClincs.title' | translate }}</h2>
+
+    <!-- Tipo de cuenta Switch -->
+    <div class="tipe-account">
+      <div class="rectangle">
+        <svg
+          width="250"
+          height="40"
+          viewBox="0 0 250 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="250" height="40" rx="10" fill="#5CB4B5" />
+        </svg>
+      </div>
+      <a class="text-elder" routerLink="/login-elder">{{ 'LoginClincs.elder' | translate }}</a>
+      <a class="text-clinics" >{{ 'LoginClincs.clinics' | translate }}</a>
+    </div>
+
+    <div class="social-login">
+      <!-- Google Login Button -->
+      <button mat-button class="google-login">
+        <img src="/assets/google-icon.png" alt="google">
+      </button>
+
+      <!-- Apple Login Button -->
+      <button mat-button class="apple-login">
+        <img src="/assets/apple-icon.png" alt="apple">
+      </button>
+
+      <!-- Facebook Login Button -->
+      <button mat-button class="facebook-login" type="submit">
+        <img src="/assets/facebook-icon.png" alt="facebook">
+      </button>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput [(ngModel)]="credentials.username" name="username" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" [(ngModel)]="credentials.password" name="password" required />
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </form>
+
+    <div class="i-forgot-my-pass">
+      <a href="#"> {{ 'LoginClincs.forgotPassword' | translate }} </a>
+    </div>
+
+    <div class="create-account">
+      <span routerLink="/create-account">{{ 'LoginClincs.dontHaveAccount' | translate }} </span>
+      <button mat-raised-button class="button-create-account" routerLink="/create-account">{{ 'LoginClincs.createAccount' | translate }} </button>
+    </div>
+  </div>
+</div>

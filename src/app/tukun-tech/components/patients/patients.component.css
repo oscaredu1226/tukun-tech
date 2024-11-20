@@ -1,0 +1,190 @@
+.patients-container {
+  padding: 40px;
+  text-align: center;
+}
+
+
+
+.patients-container h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.search-container {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  margin-left: 10px;
+}
+
+.table-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-header-cell {
+  background-color: #0097B2;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+td.mat-cell {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tr.mat-header-row, tr.mat-row {
+  display: table-row;
+}
+
+.mat-elevation-z8 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn btn-warning btn-sm {
+  border-radius: 10px;
+  width: 700px;
+}
+
+
+
+.btn-warning {
+  background-color: #00e0ca; /* Color de fondo principal */
+  color: #212529; /* Color del texto */
+  border: none; /* Eliminar bordes */
+  padding: 6px 12px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.btn-warning:hover {
+  background-color: #30ad9d; /* Fondo más oscuro al pasar el ratón */
+  color: #fff; /* Texto blanco */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.btn-warning:active {
+  background-color: #d39e00; /* Fondo más oscuro al hacer clic */
+  transform: translateY(0); /* Quitar elevación */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Reducir sombra */
+}
+
+.btn-warning:focus {
+  outline: none; /* Eliminar borde predeterminado */
+  box-shadow: 0 0 4px 2px rgba(255, 193, 7, 0.5); /* Resaltar enfoque */
+}
+
+
+/* General Styles for the Modal */
+.modal-content {
+  max-height: 90vh; /* Limita la altura máxima del modal */
+
+}
+
+.modal-header {
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #030606;
+}
+
+.modal-body {
+  background-color: #f9f9f9; /* Fondo claro */
+  padding: 80px; /* Más espacio alrededor del contenido */
+  display: flex;
+
+  flex-direction: column;
+}
+
+.modal-footer {
+  border-top: 1px solid #e5e5e5;
+  background-color: #f1f1f1;
+
+}
+
+.modal-footer .btn {
+  min-width: 120px;
+  border-radius: 5px;
+}
+
+/* Input Styles */
+.form-control {
+  border: 1px solid #ced4da; /* Borde suave */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 15px; /* Más espacio dentro de los campos */
+  margin-left: -20px;
+  font-size: 1.2rem; /* Texto más grande */
+  width: 120%; /* Campos ocupan todo el ancho del contenedor */
+}
+
+label {
+  font-weight: bold;
+  margin-left: -20px;
+}
+
+/* Center the Modal on the Screen */
+.modal-dialog {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  max-width: 150%;
+
+}
+
+/* Animation for Modal */
+
+
+/* Optional - Add responsiveness */
+@media (max-width: 1000px) {
+  .modal-dialog {
+    max-width: 190%;
+  }
+}
+
+/* Alinear Name y DNI hacia la izquierda */
+.col-lg-4:first-child {
+  text-align: left; /* Alinear el contenido hacia la izquierda */
+}
+
+.col-lg-4 {
+  flex: 1;
+  max-width: 30%; /* Ajustar el ancho de las columnas */
+  text-align: center; /* Centrar el texto */
+}
+
+
+/* Rows and Form Centering */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre columnas */
+
+}

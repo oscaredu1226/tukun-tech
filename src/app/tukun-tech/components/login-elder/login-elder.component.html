@@ -1,0 +1,42 @@
+<div class="login-container">
+  <div class="login-box">
+    <div class="logo-tukun">
+      <img src="/assets/Logo.png">
+    </div>
+
+    <h2>{{ 'LoginElder.title' | translate }}</h2>
+
+    <div class="tipe-account">
+      <div class="rectangle">
+        <svg width="250" height="40" viewBox="0 0 250 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="250" height="40" rx="10" fill="#5CB4B5" />
+        </svg>
+      </div>
+      <a class="text-elder">{{ 'LoginElder.elder' | translate }}</a>
+      <a class="text-clinics" routerLink="/login">{{ 'LoginElder.clinics' | translate }}</a>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>{{ 'LoginElder.username' | translate }}</mat-label>
+        <input matInput [(ngModel)]="credentials.username" name="username" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>{{ 'LoginElder.password' | translate }}</mat-label>
+        <input matInput type="password" [(ngModel)]="credentials.password" name="password" required />
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">{{ 'LoginElder.logIn' | translate }}</button>
+    </form>
+
+    <div class="i-forgot-my-pass">
+      <a href="#">{{ 'LoginElder.forgotPassword' | translate }}</a>
+    </div>
+
+    <div class="create-account">
+      <span>{{ 'LoginElder.dontHaveAccount' | translate }}</span>
+      <button mat-raised-button class="button-create-account" routerLink="/create-elder">{{ 'LoginElder.createAccount' | translate }}</button>
+    </div>
+  </div>
+</div>

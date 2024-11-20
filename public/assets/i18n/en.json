@@ -1,0 +1,217 @@
+{
+  "technical-support": {
+    "title": "Technical Support",
+    "questions": "Frequently Asked Questions",
+    "requestHelp": "Request Help",
+    "supportNumber": "Support Number",
+    "sendMessage" : "Send Message",
+    "buttonMessage": "Send"
+  },
+
+  "emergency-numbers": {
+    "title": "Emergency Numbers",
+    "added": "Added Emergency Numbers",
+    "add": "Add an Emergency Number",
+    "number": "Phone Number",
+    "contactName" : "Contact Name",
+    "buttonAdd": "Add"
+  },
+
+  "patient-registration": {
+    "title": "Patient Registration",
+    "name": "Name",
+    "lastName": "Last name",
+    "DNI": "DNI",
+    "gender": "Gender",
+    "age": "Age",
+    "bloodType": "Blood Type",
+    "nationality": "Nationality",
+    "nroPolicies": "No. of Policies",
+    "insurance": "Insurance",
+    "allergies": "Allergies",
+    "buttonReturn" : "Return",
+    "buttonSave": "Save",
+    "update": "Update",
+    "close": "Close",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+
+
+  "patients": {
+    "title": "Patients",
+    "patientName": "Patient Name",
+    "age": "Age",
+    "bloodType": "Blood Type",
+    "bedNumber": "Bed number",
+    "insurance": "Insurance",
+    "update": "Update"
+  },
+  "patientsHistory": {
+    "name": "Name",
+    "lastName": "Last name",
+    "DNI": "DNI",
+    "gender": "Gender",
+    "age": "Age",
+    "bloodType": "Blood Type",
+    "nationality": "Nationality",
+    "nroPolicies": "No. of Policies",
+    "insurance": "Insurance",
+    "allergies": "Alergies",
+    "buttonUpdate": "Update",
+    "appointments": "Appointments",
+    "treatment": "Treatment",
+    "exams": "Exams",
+    "medicalPrescriptions": "Medical prescriptions",
+    "buttonAdd": "Add"
+  },
+
+
+  "navbar": {
+    "postPatients": "PostPatients",
+    "icu": "ICU Patients",
+    "registration": "Registration",
+    "patients": "Patients",
+    "doctors": "Doctors",
+    "appointments": "Appointments"
+  },
+
+
+  "LoginClincs": {
+    "title": "Login",
+    "clinics": "Clinics",
+    "elder": "Elder",
+    "email": "Email",
+    "password": "Password",
+    "logIn": "Log In",
+    "forgotPassword": "I forgot my password",
+    "dontHaveAccount": "Don't have an account? Create one",
+    "createAccount": "Create an account"
+  },
+
+  "LoginElder": {
+    "title": "Log in to your account",
+    "clinics": "Clinics",
+    "elder": "Elder",
+    "email": "Email",
+    "password": "Password",
+    "logIn": "Log In",
+    "forgotPassword": "I forgot my password",
+    "dontHaveAccount": "Don't have an account? Create one",
+    "createAccount": "Create an account"
+  },
+
+  "CreateAccountClinics": {
+    "title": "Create an account",
+    "clinics": "Clinics",
+    "elder": "Elder",
+    "companyName": "Company Name",
+    "ruc": "Ruc",
+    "email": "Email",
+    "number": "Number",
+    "city": "City",
+    "password": "Password",
+    "create": "Create account",
+    "haveAccount": "Already have an account?",
+    "login": "Log into your account"
+  },
+
+  "CreateAccountElder": {
+    "title": "Create an account",
+    "clinics": "Clinics",
+    "elder": "Elder",
+    "name": "Name",
+    "lastName": "Last Name",
+    "dni": "DNI",
+    "email": "Email",
+    "password": "Password",
+    "age": "Age",
+    "create": "Create account",
+    "haveAccount": "Already have an account?",
+    "login": "Log into your account"
+  },
+
+  "HomeClincs": {
+    "title": "Welcome:",
+    "subTitle": "Where do you want to start?",
+    "postoperative": "Postoperative Patients",
+    "icu": "ICU Patients",
+    "registration": "Registration",
+    "patients": "Patients",
+    "doctors": "Doctors",
+    "appointments": "Appointments"
+  },
+
+  "postPatients": {
+    "title": "Postoperative Patients",
+    "bed": "Bed"
+  },
+
+  "icuPatients": {
+    "title": "ICU Patients",
+    "bed": "Bed"
+  },
+  "elder-profile": {
+    "buttonReturn": "Return",
+    "title": "Elder Profile",
+    "name": "Name",
+    "lastName": "Last Name",
+    "DNI": "DNI",
+    "gender": "Gender",
+    "bloodType": "Blood Type",
+    "nationality": "Nationality",
+    "age": "Age",
+    "medicalInsurance": "Medical Insurance",
+    "allergy": "Allergies",
+    "buttonSave": "Save"
+  },
+
+  "doctors" :{
+    "title": "Doctors",
+    "name": "Name",
+    "lastName": "Last Name",
+    "DNI": "DNI",
+    "age": "Age",
+    "specialization": "Specialization",
+    "codeCMP": "code CMP",
+    "contact": "Contact",
+    "nationality": "Nationality",
+    "delete": "Delete"
+  },
+
+  "registration": {
+    "title": "Registration",
+    "doctor": "Doctor",
+    "patient": "Patient"
+  },
+
+  "doctors-registration" :{
+    "title": "Registro de Doctores",
+    "name": "Name",
+    "lastName": "Last Name",
+    "DNI": "DNI",
+    "age": "Age",
+    "specialization": "Specialization",
+    "codeCMP": "Code CMP",
+    "contact": "Contact",
+    "nationality": "Nationality",
+    "save" : "Save"
+  },
+  "ElderVitalSigns": {
+    "PANEL_TITLE": "Vital Signs Panel",
+    "HR": "HR",
+    "NIPB": "NIPB",
+    "SPO2": "SpO2",
+    "TEMP": "Temperature",
+    "ALERTS_TITLE": "Alerts"
+  },
+  "ElderHome": {
+    "WELCOME": "Welcome",
+    "START_PROMPT": "Where do you want to start?",
+    "VITAL_SIGNS": "Vital Signs",
+    "PROFILE": "Older Adult Profile",
+    "EMERGENCY_NUMBERS": "Emergency Numbers",
+    "REMINDERS": "Reminders",
+    "TECH_SUPPORT": "Technical Support"
+  }
+}

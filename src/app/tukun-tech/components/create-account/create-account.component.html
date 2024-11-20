@@ -1,0 +1,82 @@
+<div class="create-container">
+
+  <!-- Contenedor blanco -->
+  <div class="create-box">
+
+    <div class="logo-tukun">
+      <img src="/assets/Logo.png" alt="logo">
+    </div>
+
+    <!-- Titulo -->
+    <h2> {{ 'CreateAccountClinics.title' | translate}} </h2>
+
+    <!-- Tipo de cuenta Switch -->
+    <div class="tipe-account">
+      <div class="rectangle">
+        <svg
+          width="250"
+          height="40"
+          viewBox="0 0 250 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="250" height="40" rx="10" fill="#5CB4B5" />
+        </svg>
+      </div>
+      <a class="text-elder" routerLink="/create-elder"> {{ 'CreateAccountClinics.elder' | translate}} </a>
+      <a class="text-clinics" >{{ 'CreateAccountClinics.clinics' | translate}} </a>
+    </div>
+
+    <form (ngSubmit)="register()">
+      <mat-form-field appearance="fill">
+        <mat-label>User</mat-label>
+        <mat-form-field appearance="fill">
+          <input matInput id="username" [(ngModel)]="user.username" name="name" required placeholder="Username"/>
+        </mat-form-field>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <mat-form-field appearance="fill">
+          <input matInput id="password" [(ngModel)]="user.password" name="name" required placeholder="Password"/>
+        </mat-form-field>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>First Name</mat-label>
+        <mat-form-field appearance="fill">
+          <input matInput id="firstName" [(ngModel)]="user.firstName" name="name" required placeholder="First Name"/>
+        </mat-form-field>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <mat-form-field appearance="fill">
+          <input matInput id="lastName" [(ngModel)]="user.lastName" name="name" required placeholder="Last Name"/>
+        </mat-form-field>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <mat-form-field appearance="fill">
+          <input matInput id="email" [(ngModel)]="user.email" name="name" required placeholder="Email"/>
+        </mat-form-field>
+      </mat-form-field>
+
+      <!-- Boton create-->
+      <div class="button-create">
+        <button mat-button color="primary" type="submit">Create</button>
+      </div>
+
+    </form>
+
+
+
+    <!-- Texto y boton alredy account -->
+    <div class="login-account">
+      <span class="text-login">{{ 'CreateAccountClinics.haveAccount' | translate}}</span>
+      <button  mat-raised-button class="button-login-account" routerLink="/login">{{ 'CreateAccountClinics.login' | translate}}</button>
+    </div>
+
+  </div>
+</div>

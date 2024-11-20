@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="header">
+    <h1>{{ 'ElderVitalSigns.PANEL_TITLE' | translate }}</h1>
+  </div>
+
+  <div class="content">
+    <div class="main-container">
+      <div class="grid-container">
+        <ng-container *ngFor="let elder of elderbeds">
+          <mat-card class="elder-card">
+            <mat-card-title>
+              <span>{{ elder.elder.name }} {{ elder.elder.lastName }}</span>
+            </mat-card-title>
+            <mat-card-content>
+              <div class="info-row">
+                <span>{{ 'ElderVitalSigns.HR' | translate }}</span>
+                <span class="value red">{{ elder.hr }} <i class="heart-icon">❤</i></span>
+              </div>
+              <div class="info-row">
+                <span>{{ 'ElderVitalSigns.NIPB' | translate }}</span>
+                <span class="value green">{{ elder.nipb }} </span>
+              </div>
+              <div class="info-row">
+                <span>{{ 'ElderVitalSigns.SPO2' | translate }}</span>
+                <span class="value purple">{{ elder.sp02 }}</span>
+              </div>
+              <div class="info-row">
+                <span>{{ 'ElderVitalSigns.TEMP' | translate }}</span>
+                <span class="value gray">{{ elder.temp }}°C</span>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </ng-container>
+      </div>
+    </div>
+
+    <!-- Panel de alertas -->
+    <h2>{{ 'ElderVitalSigns.ALERTS_TITLE' | translate }}</h2>
+    <div class="panel alerts" *ngFor="let item of criticalAlerts">
+      <div class="alert-item no-alerts">
+        {{item.typeAlert?.message}}
+      </div>
+    </div>
+  </div>
+</div>

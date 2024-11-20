@@ -1,0 +1,117 @@
+/* General Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+/* Main Content Styles */
+.main-container {
+  padding: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px; /* Espacio entre tarjetas */
+  justify-items: center; /* Centrar elementos en la cuadrícula */
+  padding: 16px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Card Styles */
+.elder-card {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography for Titles */
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Sign Item Styles */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.unit {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Colors for Specific Values */
+.red {
+  color: #ff4d4d;
+}
+
+.green {
+  color: #28a745;
+}
+
+.purple {
+  color: #007bff;
+}
+
+.gray {
+  color: #6c757d;
+}
+
+.heart-icon {
+  margin-left: 4px;
+}
+
+/* Alerts Panel */
+.panel.alerts {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.alert-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.alert-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #721c24;
+}
