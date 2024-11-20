@@ -20,26 +20,26 @@ export class UtilService {
 
 
   getBloodType(): Observable<BloodType[]>{
-    return this.http.get<BloodType[]>('https://tukun-tech-platform.onrender.com/api/v1/util/listBlood')
+    return this.http.get<BloodType[]>('https://cors-anywhere.herokuapp.com/https://tukun-tech-platform.onrender.com/api/v1/auth/register')
   }
 
   getNationality(): Observable<Nationality[]>{
-    return this.http.get<Nationality[]>('https://tukun-tech-platform.onrender.com/api/v1/util/listNationality')
+    return this.http.get<Nationality[]>('https://cors-anywhere.herokuapp.com/https://tukun-tech-platform.onrender.com/api/v1/auth/register')
   }
 
   getGender(): Observable<Gender[]>{
-    return this.http.get<Gender[]>('https://tukun-tech-platform.onrender.com/api/v1/util/listGender')
+    return this.http.get<Gender[]>('https://cors-anywhere.herokuapp.com/https://tukun-tech-platform.onrender.com/api/v1/auth/register')
   }
 
   getSpecialization(): Observable<Specialization[]>{
-   return this.http.get<Specialization[]>('https://tukun-tech-platform.onrender.com/api/v1/util/listSpecialization')
+   return this.http.get<Specialization[]>('https://cors-anywhere.herokuapp.com/https://tukun-tech-platform.onrender.com/api/v1/auth/register')
   }
 
   getAllergy(): Observable<Allergy[]>{
-    return this.http.get<Allergy[]>('https://tukun-tech-platform.onrender.com/api/v1/util/listAllergy')
+    return this.http.get<Allergy[]>('https://cors-anywhere.herokuapp.com/https://tukun-tech-platform.onrender.com/api/v1/auth/register')
   }
   getMedicalInsurance(): Observable<Medicalinsurance[]>{
-    return this.http.get<Medicalinsurance[]>('https://tukun-tech-platform.onrender.com/api/v1/util/listMedicalInsurance')
+    return this.http.get<Medicalinsurance[]>('https://cors-anywhere.herokuapp.com/https://tukun-tech-platform.onrender.com/api/v1/auth/register')
   }
 
 
