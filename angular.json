@@ -61,12 +61,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "src/proxy.conf.json"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "Tk:build:production"
+              "browserTarget": "Tk:build:production"
             },
             "development": {
-              "buildTarget": "Tk:build:development"
+              "browserTarget": "Tk:build:development"
             }
           },
           "defaultConfiguration": "development"

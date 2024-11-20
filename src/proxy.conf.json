@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://tukun-tech-platform.onrender.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
